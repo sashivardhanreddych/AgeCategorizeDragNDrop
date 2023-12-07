@@ -1,0 +1,11 @@
+.text_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.btn_container{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0rem 3rem;
+}

@@ -1,0 +1,20 @@
+.top_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top_container .searchbar{
+    width: 300px;
+    height: 40px;
+    padding: 5px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding: 7.5px 14px !important;
+}
+/* .showUserModalBtn{
+    width: 100px;
+    height: 40px;
+    background-color: #e0e3ea;
+} */
