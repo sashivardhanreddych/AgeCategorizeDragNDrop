@@ -15,13 +15,12 @@ const ContentContainer = ({searchItems, handleEditUser}) => {
   
     useEffect(() => {
         storageEventHandler();
-        // window.addEventListener("storage", storageEventHandler, false);
-        // // Cleanup function to remove the event listener
-        // return () => {
-        //   window.removeEventListener("storage", storageEventHandler);
-        // };
+        window.addEventListener("storage", storageEventHandler, false);
+        return () => {
+          window.removeEventListener("storage", storageEventHandler);
+        };
 
-    }, [userData]);
+    }, []);
 
     useEffect(() => {
         searchAndSortItems()

@@ -18,7 +18,7 @@ const Dashboard = () => {
     console.log("check userDetailsData", userDetailsData);
     const storedData = JSON.parse(userDetailsData) || [];
     setFilteredData(storedData);
-  }, []);
+  }, [filteredItems]);
 
   const handleSearch = () => {
     const userDetailsData = JSON.parse(localStorage.getItem('userDetails'));

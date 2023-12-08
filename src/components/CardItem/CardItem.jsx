@@ -1,12 +1,5 @@
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
-// import { Data } from "../interfaces";
-
-// interface Props {
-//   data: Data;
-//   handleDragging: (dragging: boolean) => void;
-// }
-
 const CardItem = ({ data, handleDragging, handleDeleteItem, handleEditUser }) => {
   const handleDragStart = (e) => {
     e.dataTransfer.setData("text", `${data.id}`);

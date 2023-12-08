@@ -57,55 +57,7 @@ const AddUser = ({handleClose, userData}) => {
     const phoneRegex = /^\d{10}$/;
     return phoneRegex.test(phoneNumber);
   };
-
-  // const addNewUser = () => {
-  //   if (!userName || !userEmail || !userNumber || age === 0 || age > 100) {
-  //     setError("Please fill out all fields correctly");
-  //     return;
-  //   }
-
-  //   if (!validateEmail(userEmail)) {
-  //     setError("Invalid email address");
-  //     return;
-  //   }
-
-  //   if (!validatePhoneNumber(userNumber)) {
-  //     setError("Invalid phone number");
-  //     return;
-  //   }
-
-  //   const existingData = JSON.parse(localStorage.getItem("userDetails")) || [];
-
-  //   const newTask = {
-  //     username: userName,
-  //     age: age,
-  //     email: userEmail,
-  //     phonenumber: userNumber,
-  //     id: existingData.length + 1,
-  //     isAsc: true,
-  //     status:
-  //       age < 18
-  //         ? "age <18"
-  //         : age >= 18 && age < 24
-  //         ? "age 19-24"
-  //         : age >= 25 && age < 45
-  //         ? "age 25-45"
-  //         : "age >45",
-  //   };
-
-  //   console.log("check usersList", usersList, newTask);
-
-  //   const updatedData = [...existingData, newTask];
-  //   setUsersList(updatedData);
-  //   localStorage.setItem("userDetails", JSON.stringify(updatedData));
-
-  //   setUserName("");
-  //   setUserEmail("");
-  //   setUserNumber("");
-  //   setAge(0);
-  //   setError(null);
-  // };
-
+  
   const handleUserUpdate = () => {
     if (!userName || !userEmail || !userNumber || age === 0 || age > 100) {
       setError("Please fill out all fields correctly");
@@ -164,7 +116,7 @@ const AddUser = ({handleClose, userData}) => {
     const maxId = Math.max(...existingData.map((user) => user.id), 0);
     return maxId + 1;
   };
-  console.log("check updatedData 160", userData);
+  // console.log("check updatedData 160", userData);
   return (
     <Box sx={{ margin: '1rem' }}>
       <div className="text_container">
